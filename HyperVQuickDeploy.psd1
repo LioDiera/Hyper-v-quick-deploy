@@ -21,10 +21,4 @@
         @{ ModuleName = 'Hyper-V'; ModuleVersion = '2.0.0.0' }
     )
 
-    PrivateData = @{
-        PSData = @{
-            Tags       = @('HyperV', 'VM', 'Deploy', 'TUI')
-            ProjectUri = 'https://github.com/LioDiera/Hyper-v-quick-deploy'
-        }
-    }
 }

@@ -24,7 +24,7 @@
     PrivateData = @{
         PSData = @{
             Tags       = @('HyperV', 'VM', 'Deploy', 'TUI')
-            ProjectUri = 'https://github.com/your-repo/hyper-v-quick-deploy'
+            ProjectUri = 'https://github.com/LioDiera/Hyper-v-quick-deploy'
         }
     }
 }

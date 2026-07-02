@@ -79,5 +79,5 @@ profiles/
 
 ## Notes
 
-- Answer ISOs and `autounattend.xml` files are excluded from the repo via `.gitignore` because they contain the VM administrator password in plaintext.
+- Answer ISOs and `autounattend.xml` files are written to the VM folder (outside the repo) and are also excluded via `.gitignore` as a safety net — they embed the VM administrator password in plaintext.
 - User config (`config.psd1`) and product keys (`keys.psd1`) live in `$env:APPDATA` and are never stored in the repo.

@@ -1,0 +1,19 @@
+# Local user config — should live in $env:APPDATA, but ignore here as a safety net
+config.psd1
+
+# Answer files and ISOs contain the VM admin password in plaintext.
+# These are always written to the VMFolder outside the repo, but exclude
+# here as a safety net in case someone debug-dumps them locally.
+autounattend.xml
+*.iso
+
+# VM disk images — large binaries, never belong in source control
+*.vhd
+*.vhdx
+*.avhd
+*.avhdx
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store

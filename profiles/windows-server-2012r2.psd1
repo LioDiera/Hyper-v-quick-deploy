@@ -13,10 +13,11 @@
     JoinTypes        = @('DJ', 'WG')
     KmsKey           = 'D2N9P-3P6X9-2R39C-7RTCD-MDVJX'  # WS 2012 R2 Standard -- KMS client setup key (Microsoft public docs)
     WimImageName     = 'Windows Server 2012 R2 Standard (Server with a GUI)'
+    WimImageIndex    = 2   # index in install.wim: 1=Standard Core, 2=Standard GUI, 3=Datacenter Core, 4=Datacenter GUI
     Editions         = @(
-        @{ Name = 'Standard (Server with a GUI)';   WimImageName = 'Windows Server 2012 R2 Standard (Server with a GUI)';      KmsKey = 'D2N9P-3P6X9-2R39C-7RTCD-MDVJX' }
-        @{ Name = 'Standard Core';                  WimImageName = 'Windows Server 2012 R2 Standard (Server Core Installation)'; KmsKey = 'D2N9P-3P6X9-2R39C-7RTCD-MDVJX' }
-        @{ Name = 'Datacenter (Server with a GUI)'; WimImageName = 'Windows Server 2012 R2 Datacenter (Server with a GUI)';    KmsKey = 'W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9' }
-        @{ Name = 'Datacenter Core';                WimImageName = 'Windows Server 2012 R2 Datacenter (Server Core Installation)'; KmsKey = 'W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9' }
+        @{ Name = 'Standard (Server with a GUI)';   WimImageIndex = 2; WimImageName = 'Windows Server 2012 R2 Standard (Server with a GUI)';                KmsKey = 'D2N9P-3P6X9-2R39C-7RTCD-MDVJX' }
+        @{ Name = 'Standard Core';                  WimImageIndex = 1; WimImageName = 'Windows Server 2012 R2 Standard (Server Core Installation)';         KmsKey = 'D2N9P-3P6X9-2R39C-7RTCD-MDVJX' }
+        @{ Name = 'Datacenter (Server with a GUI)'; WimImageIndex = 4; WimImageName = 'Windows Server 2012 R2 Datacenter (Server with a GUI)';              KmsKey = 'W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9' }
+        @{ Name = 'Datacenter Core';                WimImageIndex = 3; WimImageName = 'Windows Server 2012 R2 Datacenter (Server Core Installation)';       KmsKey = 'W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9' }
     )
 }
